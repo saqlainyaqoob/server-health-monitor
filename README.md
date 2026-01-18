@@ -1,6 +1,6 @@
 # Server Health Monitor
 
-A production-inspired Linux server monitoring tool built with Bash — automated, reliable, and DevOps-ready.
+A production-inspired Linux server monitoring tool built with Bash, automated, reliable, and DevOps-ready.
 
 Server Health Monitor is a lightweight Bash script that continuously observes critical system metrics and records them in a centralized log file. Designed with a real-world DevOps mindset, it focuses on automation, observability, and operational clarity.
 
