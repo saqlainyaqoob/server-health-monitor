@@ -1,6 +1,6 @@
 # Server Health Monitor
 
-A production-inspired Linux server monitoring tool built with Bash, automated, reliable, and DevOps-ready.
+A production-inspired Linux server monitoring tool built with Bash — automated, reliable, and DevOps-ready.
 
 Server Health Monitor is a lightweight Bash script that continuously observes critical system metrics and records them in a centralized log file. Designed with a real-world DevOps mindset, it focuses on automation, observability, and operational clarity.
 
@@ -37,14 +37,14 @@ All results are appended to a single log for easy auditing and debugging.
 
 ---
 
-## 🗂️ Repository Layout
+## 🗂️  Repository structure
 
 ```
 server-health-monitor/
-├── health-monitor.sh   # Core monitoring logic
-├── README.md           # Documentation
-├── .gitignore          # Ignore logs & temporary files
-└── logs/               # Optional local logs directory
+├── server-health-monitor.sh   # Core monitoring logic
+├── README.md                  # Documentation
+├── .gitignore                 # Ignore logs & temporary files
+└── logs/                      # Optional local logs directory
 ```
 
 Structured to reflect real production repositories — simple and intentional.
@@ -82,12 +82,12 @@ cd server-health-monitor
 
 ### 2. Make the script executable
 ```bash
-chmod +x health-monitor.sh
+chmod +x server-health-monitor.sh
 ```
 
 ### 3. Run a test execution
 ```bash
-sudo ./health-monitor.sh
+sudo ./server-health-monitor.sh
 ```
 
 ---
@@ -97,12 +97,12 @@ sudo ./health-monitor.sh
 All system checks are written to:
 
 ```
-/var/log/system-health-monitor.log
+/var/log/server-health-monitor.log
 ```
 
 Monitor logs live:
 ```bash
-sudo tail -f /var/log/system-health-monitor.log
+sudo tail -f /var/log/server-health-monitor.log
 ```
 
 Logs are timestamped and append-only, making them suitable for audits and troubleshooting.
@@ -120,7 +120,7 @@ sudo crontab -e
 
 Schedule execution:
 ```
-*/5 * * * * /absolute-path-here/system-health-monitor.sh
+*/5 * * * * /absolute-path-here/server-health-monitor.sh
 ```
 
 Once scheduled, the server monitors itself.
